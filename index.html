@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <div class="header"><h1>EXPENSE TRACKER</h1></div>
+
+        <form id="expense-form">
+          <div class="name">
+            <label for="locationInput">Name</label>
+            <input
+              type="text"
+              id="locationInput"
+              placeholder="Where was the expense made?"
+            />
+          </div>
+
+          <div class="date">
+            <label for="dateInput">Date</label>
+            <input type="date" id="dateInput" />
+          </div>
+          <div class="amount">
+            <label for="amountInput">Amount</label>
+            <input type="text" id="amountInput" />
+          </div>
+          <button class="submit">Add Expense</button>
+        </form>
+
+        <div class="table-container">
+          <table>
+            <tr class="table-header">
+              <th>Name</th>
+              <th>Date</th>
+              <th>Amount</th>
+            </tr>
+
+            <tr class="no-exp-str">
+              <td colspan="3">No expenses added yet</td>
+            </tr>
+
+            <tr class="table-data">
+              <td data-name></td>
+              <td data-date></td>
+              <td data-amount></td>
+              <td data-delete></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

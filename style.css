@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper {
+  height: 100vh;
+  overflow: hidden;
+  background: #04110b;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+
+.header {
+  background-color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  transform: skew(-22deg, 0deg);
+  margin: 3rem 3rem;
+  box-shadow: -13px 5px 15px 5px #9e0c0c;
+}
+
+#expense-form {
+  width: 80%;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+[type="text"],
+[type="date"] {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 13px 13px -2px rgba(95, 94, 94, 0.73);
+  outline: none;
+}
+#locationInput {
+  width: 20rem;
+}
+
+.submit {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: green;
+  color: white;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0px 13px 13px -2px rgba(95, 94, 94, 0.73);
+  transition: background-color 0.2s;
+}
+
+.submit:hover {
+  background-color: rgb(1, 109, 1);
+}
+
+.table-container {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 2rem;
+  height: 60%; /* Set a fixed height for the container */
+  border-radius: 1rem;
+
+  overflow-y: auto; /* Enable vertical scrolling within the container */
+}
+table {
+  width: 100%;
+
+  overflow-y: auto;
+}
+
+.table-header {
+  position: sticky;
+  top: 0;
+  color: #424141;
+  font-size: 2rem;
+  background-color: #fff;
+  margin-top: 1rem;
+}
+.table-header th {
+  width: 30%;
+}
+
+.table-data {
+  text-align: center;
+}
+
+td {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.hidden {
+  display: none;
+}
+
+[data-delete] {
+  color: red;
+  cursor: pointer;
+  font-size: 1rem;
+}
